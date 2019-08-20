@@ -40,5 +40,4 @@ const headerSelector = document.querySelector('.header-container');
 // console.log('header container', headerSelector);
 headerSelector.append(Header());
 
-// topics.data.forEach(articles => headerSelector.append(Header(articles)));
 
