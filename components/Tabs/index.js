@@ -8,16 +8,16 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
-function tabCreator(info) {
-  console.log('info', info);
+function tabCreator() {
+  // console.log('info', info);
   const tab = document.createElement('div');
   tab.classList.add('tab');
-  tab.textContent = info.topics;
+  // tab.textContent = info.topic;
 
   return tab;
 }
 
-// console.log('tab creator', tabCreator());
+// console.log('tab creator', tabCreator(info));
 
 const tabSelector = document.querySelector('.topics');
 tabSelector.append(tabCreator());
