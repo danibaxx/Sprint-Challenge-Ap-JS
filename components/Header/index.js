@@ -11,6 +11,8 @@
 
 // console.log('Hello');
 
+
+
 function Header() {
   const header = document.createElement('div');
   header.classList.add('header');
@@ -30,13 +32,13 @@ function Header() {
   header.appendChild(h1);
   header.appendChild(spanTemp);
 
-  const headerContainer = document.querySelector('.headerContainer');
-
-  console.log(headerContainer);
-
-  // headerContainer.append(header);
-
   return header;
 }
+// console.log("header", Header());
 
-console.log(Header());
+const headerSelector = document.querySelector('.header-container');
+// console.log('header container', headerSelector);
+headerSelector.append(Header());
+
+// topics.data.forEach(articles => headerSelector.append(Header(articles)));
+
